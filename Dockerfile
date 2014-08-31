@@ -4,6 +4,7 @@ maintainer Felipe Arruda "contato@arruda.blog.br"
 RUN apt-get -qq update
 
 ADD ./scripts/ /scripts/
+RUN chmod +x /scripts/start.sh
 
 VOLUME ['/data']
 
